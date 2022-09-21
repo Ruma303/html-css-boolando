@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.top-menu {
+    width: 100vw;
+    height: 4vh;
+    background-color: rgb(255, 104, 8);
+    position: static;
+    display: inline-block;
+}
+.menu {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* non mi risponde, non riesco a ridimensionare l'immagine */
+nav img {
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.ico {
+    width: 16px;
+}
