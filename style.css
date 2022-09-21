@@ -4,31 +4,32 @@
     box-sizing: border-box;
 }
 
-.top-menu {
+.orange-bar {
     width: 100vw;
     height: 4vh;
     background-color: rgb(255, 104, 8);
     position: static;
-    display: inline-block;
 }
-.menu {
+
+.nav-bar {
     max-width: 80%;
     margin: 0 auto;
     display: flexbox;
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
 }
 
-/* non mi risponde, non riesco a ridimensionare l'immagine */
-nav img {
-    width: 100px;
-}
-
-a {
+header a {
     text-decoration: none;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+header img {
+    width: 100px;
 }
 
 .ico {
     width: 16px;
+    color: red;
 }
