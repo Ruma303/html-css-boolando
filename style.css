@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .orange-bar {
@@ -9,22 +10,22 @@
     height: 4vh;
     background-color: rgb(255, 104, 8);
     position: static;
+    top: 0;
 }
 
 .nav-bar {
     max-width: 70%;
+    min-width: 30%;
     height: 100%;
     margin: 0 auto;
-    display: flex;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header a {
+a {
     text-decoration: none;
     color: white;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     gap: 3em;
 }
@@ -39,4 +40,52 @@ header img {
     display: flex;
     flex-direction: row;
     gap: 0.5em;
+}
+
+.cards-container {
+    max-width: 70%;
+    /* max-height: 60%; */
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 30%;
+    /* margin: 0 20px; */
+    /* display: flex;
+    flex: 0 0 0; */
+}
+
+.background-footer {
+    width: 100vw;
+    height: 7vh;
+    background-color: rgb(25, 25, 25);
+    position: static;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 70%;
+    min-width: 30%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+footer h4 {
+    color: white;
+}
+
+footer a {
+    font-size: 10px;
+}
+
+footer i {
+    font-size: 25px;
+    padding: 0.5em;
 }
