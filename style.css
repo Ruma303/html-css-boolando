@@ -12,10 +12,13 @@
 }
 
 .nav-bar {
-    max-width: 80%;
+    max-width: 70%;
+    height: 100%;
     margin: 0 auto;
-    display: flexbox;
-    justify-content: center;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header a {
@@ -23,6 +26,7 @@ header a {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    gap: 3em;
 }
 
 header img {
@@ -31,5 +35,8 @@ header img {
 
 .ico {
     width: 16px;
-    color: red;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
 }
