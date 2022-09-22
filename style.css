@@ -5,19 +5,22 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    max-width: 70%;
+    min-width: 30%;
+    margin: 0 auto;
+}
+
 .orange-bar {
     width: 100vw;
     height: 4vh;
     background-color: rgb(255, 104, 8);
-    position: static;
+    position: fixed;
     top: 0;
 }
 
 .nav-bar {
-    max-width: 70%;
-    min-width: 30%;
     height: 100%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,29 +45,59 @@ header img {
     gap: 0.5em;
 }
 
+/* MAIN E SCHEDE */
+
 .cards-container {
     max-width: 70%;
-    /* max-height: 60%; */
-    margin: 50px auto;
+    min-width: 30%;
+    margin: 100px auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.cards {
-    width: 30%;
-    /* margin: 0 20px; */
-    /* display: flex;
-    flex: 0 0 0; */
+/* .cards {
+} */
+
+.img-inside {
+    position:relative;
+
 }
+
+main img {
+    width: 30%;
+}
+
+.prefe {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-color: white;
+    padding: 0.8rem;
+}
+
+
+.discount {
+    position: absolute;
+}
+
+.price-red {
+    color: red;
+    font-weight: 700;
+}
+
+.price-line-through {
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+/* FOOTER */
 
 .background-footer {
     width: 100vw;
     height: 7vh;
     background-color: rgb(25, 25, 25);
-    position: static;
-    bottom: 0;
 }
 
 .footer-container {
@@ -76,6 +109,16 @@ header img {
     align-items: center;
     justify-content: space-between;
 } 
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-container h4 {
+    color: white;
+    text-align: left;
+}
 
 footer h4 {
     color: white;

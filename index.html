@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-    <header class="orange-bar">
-        <div class="nav-bar">
+    <header class="orange-bar ">
+        <div class="nav-bar container">
             <!-- 3 sezioni -->
             <nav class="categories">
                 <a href="#" class="top-left-links">Donna</a>
@@ -32,11 +31,22 @@
     </header>
 
     <main>
-        <div class="cards-container">
+        <div class="cards-container container">
             <div class="cards">
-                <img src="img/1.webp" alt="">
-
+                <img src="img/1.webp" class="item" id="img1">
+                <div class="img-inside">
+                    <i class="fa-solid fa-heart prefe"></i>
+                    <span class="discount">-50%</span>
+                    <span class="green-tag">Sostenibilità</span>
+                </div>
+                <div>
+                    Levi's <br>
+                    <h3>RELAXED FIT TEE UNISEX</h3>
+                    <span class="price-red">14,99€</span>
+                    <span class="price-line-through">29,99€</span>
+                </div>
             </div>
+
              <!--<div class="cards">
                 <img src="img/2.webp" alt="">
 
@@ -57,13 +67,14 @@
                 <img src="img/6.webp" alt="">
 
             </div> -->
+
         </div>
 
     </main>
 
     <footer class="background-footer">
 
-        <div class="footer-container">
+        <div class="footer-container container">
             <div>
                 <h4>Booleando s.r.l.</h4>
                 <a>Informazioni legali</a>
