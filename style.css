@@ -10,12 +10,11 @@ body {
     /* il body inizia sotto la barra arancione */
 }
 
-.container {
+.header-container {
     max-width: 70%;
     min-width: 30%;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
 }
 
 /* HEADER  */
@@ -25,8 +24,8 @@ body {
     height: 4vh;
     background-color: rgb(255, 104, 8);
     position: fixed;
-    z-index: 999;
     top: 0;
+    z-index: 99;
 }
 
 .nav-bar {
@@ -73,21 +72,27 @@ nav li:hover {
 
 /* MAIN E SCHEDE */
 
-.cards-container {
-    max-width: 70%;
-    min-width: 30%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 1em;
-    row-gap: 4rem;
+main {
+    margin: 0 auto 7vh;
 }
 
-.card {
+.main-container {
+    margin: 0 auto;
+    padding-bottom: 2em;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2em;
+    column-gap: 1rem;
+}
+
+.card{
     width: 33%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
     cursor: pointer;
+    flex: 0 0 calc((100% - 2em) / 3);
 }
 
 .card img {
@@ -113,7 +118,7 @@ nav li:hover {
     right: 0;
     background-color: white;
     padding: 0.8rem;
-    z-index: 99;
+    z-index: 10;
 }
 
 .discount {
@@ -121,7 +126,7 @@ nav li:hover {
     background-color: red;
     padding: 0.5rem;
     font-weight: 500;
-    z-index: 99;
+    z-index: 10;
 }
 
 .green-tag {
@@ -129,7 +134,7 @@ nav li:hover {
     background-color: green;
     padding: 0.5rem;
     font-weight: 500;
-    z-index: 99;
+    z-index: 10;
 }
 
 .price-red {
