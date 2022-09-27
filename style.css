@@ -10,13 +10,6 @@ body {
     /* il body inizia sotto la barra arancione */
 }
 
-.header-container {
-    max-width: 70%;
-    min-width: 30%;
-    margin: 0 auto;
-    display: flex;
-}
-
 /* HEADER  */
 
 .orange-bar {
@@ -29,6 +22,9 @@ body {
 }
 
 .nav-bar {
+    margin: 0 auto;
+    width: 1000px;
+    min-width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -66,7 +62,6 @@ nav li:hover {
     color: white;
     display: flex;
     flex-direction: row;
-    padding: 0 1em;
     gap: 1em;
 }
 
@@ -170,42 +165,54 @@ main {
 
 /* FOOTER */
 
-.background-footer {
+footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
     width: 100vw;
     height: 7vh;
     background-color: rgb(25, 25, 25);
+    color: white;
 }
 
 .footer-container {
-    max-width: 70%;
-    min-width: 30%;
-    height: 100%;
     margin: 0 auto;
+    width: 1000px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 } 
 
-footer {
-    position: fixed;
-    bottom: 0;
-    z-index: 99999;
+.col-sx{
+    display: flex;
 }
 
-.footer-container h4 {
-    color: white;
-    text-align: left;
-}
-
-footer h4 {
-    color: white;
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 }
 
 footer a {
-    font-size: 10px;
+    font-size: 0.8rem;
 }
 
 footer i {
     font-size: 25px;
-    padding: 0.5em;
+}
+
+.col-dx {
+    display: flex;
+}
+
+.col-dx ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.col-dx li{
+    display: flex;
+    gap: .8em;
 }
