@@ -31,6 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
 }
 
 .nav-bar ul {
@@ -65,6 +66,7 @@ nav li:hover {
     display: flex;
     flex-direction: row;
     padding: 0 1em;
+    gap: 1em;
 }
 
 /* MAIN E SCHEDE */
@@ -77,52 +79,55 @@ nav li:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 4rem;
 }
 
 .card {
     width: 33%;
+    cursor: pointer;
 }
 
-main img {
+.card img {
     max-width: 100%;
     min-width: 30%;
     z-index: 1;
 }
 
-.card .img-area {
+.img-area {
     position:relative;
+    max-width: 100%;
 }
 
-.heart {
+.above {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.card .heart {
     position: absolute;
     top: 5px;
     right: 0;
     background-color: white;
     padding: 0.8rem;
-}
-
-.heart:hover {
-    color: red;
+    z-index: 99;
 }
 
 .discount {
-    position: absolute;
     color: white;
     background-color: red;
-    bottom: 100px;
-    left: 0;
     padding: 0.5rem;
     font-weight: 500;
+    z-index: 99;
 }
 
 .green-tag {
-    position: absolute;
     color: white;
     background-color: green;
     padding: 0.5rem;
     font-weight: 500;
-    bottom: 100px;
-    left: 60px;
+    z-index: 99;
 }
 
 .price-red {
@@ -135,10 +140,25 @@ main img {
     font-weight: 500;
 }
 
+.img-area .tag {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    display: flex;
+    gap: .5rem;
+}
+
 /* COMPORTAMENTO HOVER */
 
-.item-hover {
-    display: none;
+
+.card:hover .above {
+    /* opacity: 0; */
+    /* oppure con lo z-index in negativo*/
+    z-index: -1;
+}
+
+.heart:hover {
+    color: red;
 }
 
 /* FOOTER */
